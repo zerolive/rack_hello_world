@@ -1,0 +1,7 @@
+version: '2'
+services:
+  rack_hello_world:
+    build: .
+    ports:
+      - '6002:6002'
+    command: bundle exec rackup -o 0.0.0.0 -p 6002
